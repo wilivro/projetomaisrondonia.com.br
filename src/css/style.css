@@ -3244,15 +3244,15 @@ a:-webkit-any-link {
 
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
 
 }
 
 .borda-conteudo {
-  width: 50%;
-  left: 23%;
-  top: 31%;
-  position: relative;
+  width: 70%;
+  left: 15%;
+  top: 3%;
+  position: absolute;
 }
 
 
