@@ -8,9 +8,13 @@ $("#chat").click(function () {
   $(".chat__clearfix").trigger('click');
 });
 
-const interval = setInterval(() => {
+const testinterval = () => {
+  const safe = setInterval(() => {
+  console.log($(".chat__clearfix").length)
   if($(".chat__clearfix").length) {
     $(".chat__clearfix").trigger('click');
-    clearInterval(interval)
+    clearInterval(safe)
   }
-}, 10);
+  }, 100); 
+}
+testinterval()
