@@ -2574,6 +2574,10 @@ textarea.w-select {
 
 .form-block {
   width: 100%;
+  height: 668px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .field-label {
@@ -3245,7 +3249,7 @@ a:-webkit-any-link {
 
 .borda {
   background-color: lightgray;
-  min-height: 548px;
+  min-height: 739px;
   min-width: 521px;
 
   width: 60%;
