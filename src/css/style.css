@@ -17,7 +17,12 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 article,
@@ -2592,6 +2597,7 @@ textarea.w-select {
   background-color: #f0a832;
   font-family: Allerdisplay, sans-serif;
   color: #fff;
+  max-width: 150px;
   /* font-size: 20px; */
   font-size: 16px;
   font-weight: 400;
@@ -3238,10 +3244,12 @@ a:-webkit-any-link {
 
 
 .borda {
-  background-image: url("../img/borda.png");
+  background-color: lightgray;
   min-height: 548px;
   min-width: 521px;
 
+  width: 60%;
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -3257,3 +3265,51 @@ a:-webkit-any-link {
 
 
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer > div:first-child img {
+  
+}
+
+footer > div:last-child ul {
+  display: flex;
+}
+
+#atendimento h1 {
+  color: #e8466e;
+  font-size: 22px;
+}
+
+#atendimento label {
+  font-size: 14px;
+}
+
+#atendimento .options-list {
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#atendimento .options-list h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0;
+}
+
+#atendimento .options-list h3 img{
+  width: 30px;
+  margin-right: 10px;
+}
