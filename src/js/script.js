@@ -10,9 +10,10 @@ $("#chat").click(function () {
 
 const testinterval = () => {
   const safe = setInterval(() => {
-  console.log($(".chat__clearfix").length)
   if($(".chat__clearfix").length) {
-    $(".chat__clearfix").trigger('click');
+    setTimeout(() => {
+      $(".chat__clearfix").trigger('click');
+    },100)
     clearInterval(safe)
   }
   }, 100); 
